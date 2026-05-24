@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mangozteen is a premier deep-tech enterprise based in Thrissur, Kerala, specializing in advanced AI, Machine Learning, and next-generation Fintech infrastructure.">
+  <meta name="keywords" content="Mangozteen, AI, Machine Learning, Fintech, Thrissur, Kerala, KSUM, Quick Commerce, Rahul Raghunathan, Amal Kishore, Fresqu, Predictive Analytics, Financial Tech">
+  <meta name="author" content="Mangozteen">
+  <title>Mangozteen | Deep Tech, Machine Intelligence & Financial Infrastructure</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@200;300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons via CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Gradients -->
+  <div class="mesh-gradient-bg"></div>
+  <div class="gold-shimmer-orb top-right"></div>
+  <div class="gold-shimmer-orb bottom-left"></div>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#" class="logo-area" aria-label="Mangozteen Home">
+        <svg class="logo-svg" viewBox="0 0 100 100" width="48" height="48">
+          <defs>
+            <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFF3B0" />
+              <stop offset="50%" stop-color="#D4AF37" />
+              <stop offset="100%" stop-color="#855B00" />
+            </linearGradient>
+            <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="3" result="blur" />
+              <feComposite in="SourceGraphic" in2="blur" operator="over" />
+            </filter>
+          </defs>
+          <!-- Stylized Outer Mangosteen Leaf Circle -->
+          <circle cx="50" cy="50" r="40" stroke="url(#gold-grad)" stroke-width="1.5" fill="none" opacity="0.4" stroke-dasharray="4 2" />
+          <!-- AI Tech Node Connections (Gold Star Burst) -->
+          <path d="M 50 15 L 50 85 M 15 50 L 85 50 M 25 25 L 75 75 M 25 75 L 75 25" stroke="url(#gold-grad)" stroke-width="0.75" opacity="0.3" />
+          <!-- Innermost Mangosteen segments / Tech core -->
+          <path d="M 50 30 C 58 30, 65 37, 65 45 C 65 53, 58 60, 50 60 C 42 60, 35 53, 35 45 C 35 37, 42 30, 50 30 Z" fill="none" stroke="url(#gold-grad)" stroke-width="2.5" filter="url(#glow)" />
+          <path d="M 50 33 C 55 33, 59 37, 59 42 C 59 47, 55 51, 50 51 C 45 51, 41 47, 41 42 C 41 37, 45 33, 50 33 Z" fill="url(#gold-grad)" opacity="0.8" />
+          <!-- Active AI Pulsing Orbit Dots -->
+          <circle cx="50" cy="15" r="3" fill="url(#gold-grad)" filter="url(#glow)" class="pulse-dot-1" />
+          <circle cx="85" cy="50" r="3" fill="url(#gold-grad)" filter="url(#glow)" class="pulse-dot-2" />
+          <circle cx="50" cy="85" r="3" fill="url(#gold-grad)" filter="url(#glow)" class="pulse-dot-3" />
+          <circle cx="15" cy="50" r="3" fill="url(#gold-grad)" filter="url(#glow)" class="pulse-dot-4" />
+        </svg>
+        <span class="logo-text">Mangozteen</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#origin" class="nav-link">Origins</a></li>
+          <li><a href="#pillars" class="nav-link">Pillars</a></li>
+          <li><a href="#fresqu" class="nav-link">Fresqu</a></li>
+          <li><a href="#roadmap" class="nav-link">Vision</a></li>
+          <li><a href="#leadership" class="nav-link">Team</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn-primary-gold nav-cta-btn">Connect AI</a>
+        <button class="mobile-toggle" aria-label="Toggle Menu" id="mobile-toggle">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <!-- HTML5 Canvas for Golden Constellation Particles -->
+      <canvas id="hero-canvas" class="hero-particles-canvas"></canvas>
+
+      <div class="section-container hero-container">
+        <div class="hero-badge animate-fade-in">
+          <span class="badge-dot"></span>
+          <span class="badge-text">Kerala Startup Mission (KSUM) Recognized</span>
+        </div>
+
+        <h1 class="hero-title animate-fade-in-up">
+          Architecting <span class="gold-gradient-text">Machine Intelligence</span> <br>
+          for High-Value Enterprise Pipelines
+        </h1>
+
+        <p class="hero-subtitle animate-fade-in-up">
+          Operating from the deep tech hub of Thrissur, Mangozteen integrates advanced AI/ML architectures with secure financial pipelines to eliminate regional supply friction, secure transaction yields, and empower modern merchants.
+        </p>
+
+        <div class="hero-actions animate-fade-in-up">
+          <a href="#pillars" class="btn-primary-gold">Explore Core Pillars</a>
+          <a href="#fresqu" class="btn-secondary-outline">Interactive Simulation <i data-lucide="arrow-right" class="btn-icon"></i></a>
+        </div>
+
+        <!-- Key Metrics Cards -->
+        <div class="hero-metrics animate-fade-in-up-delayed">
+          <div class="metric-card">
+            <h3 class="metric-num">2022</h3>
+            <p class="metric-label">Year Founded</p>
+          </div>
+          <div class="metric-card">
+            <h3 class="metric-num">98.4<span class="metric-suffix">%</span></h3>
+            <p class="metric-label">Route Optimization Precision</p>
+          </div>
+          <div class="metric-card">
+            <h3 class="metric-num">Poothole</h3>
+            <p class="metric-label">Thrissur HQ Node</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Section Divider -->
+    <div class="luxury-divider">
+      <div class="divider-line"></div>
+      <div class="divider-diamond"></div>
+      <div class="divider-line"></div>
+    </div>
+
+
+    <!-- Origins & Story Section -->
+    <section id="origin" class="origin-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-subtitle">FOUNDING VISION</h2>
+          <h1 class="section-title">The Roots of <span class="gold-gradient-text">Mangozteen</span></h1>
+          <p class="section-desc">Born in Poothole, Thrissur—the cultural capital of Kerala and a fast-emerging fintech node—Mangozteen was built to resolve merchant leaks with high-end algorithmic forecasting.</p>
+        </div>
+
+        <div class="origin-grid">
+          <!-- Text Content -->
+          <div class="origin-text-block">
+            <h3 class="origin-block-title">Bridging Regional Margins with Deep Tech</h3>
+            <p class="origin-paragraph">
+              In 2022, founders <strong>Rahul Raghunathan</strong> and <strong>Amal Kishore</strong> recognized a massive, silent leak in the regional retail landscape. Unstructured regional buyer databases, coupled with transit delays, were leading to high product return rates, severe logistical friction, and critical margin leaks for local commercial entities.
+            </p>
+            <p class="origin-paragraph">
+              Driven by the vision to protect these independent sellers, they engineered an intelligent algorithmic layer. Mangozteen began processing hyper-local logistical metadata, mapping demand patterns, and scaling transaction pipelines—turning regional bottlenecks into high-velocity digital assets.
+            </p>
+            <div class="quote-card">
+              <i data-lucide="quote" class="quote-icon"></i>
+              <blockquote>
+                "We saw how delivery delays and unstructured merchant pipelines drained the local economy. Our mission became clear: deploy enterprise machine intelligence where it protects the local seller first."
+              </blockquote>
+              <cite class="quote-author">— Rahul Raghunathan, Founder & CEO</cite>
+            </div>
+          </div>
+
+          <!-- Interactive Timeline Widget -->
+          <div class="origin-visual-block">
+            <div class="glass-timeline-container">
+              <h3 class="timeline-title">The Evolution Timeline</h3>
+              <div class="timeline-wrapper">
+                
+                <div class="timeline-step active" data-step="1">
+                  <div class="timeline-marker">
+                    <span class="marker-dot"></span>
+                    <span class="marker-line"></span>
+                  </div>
+                  <div class="timeline-content">
+                    <span class="timeline-date">2022</span>
+                    <h4>Corporate Genesis</h4>
+                    <p>Established corporate partnership in Poothole, Thrissur, building early algorithmic infrastructure.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-step" data-step="2">
+                  <div class="timeline-marker">
+                    <span class="marker-dot"></span>
+                    <span class="marker-line"></span>
+                  </div>
+                  <div class="timeline-content">
+                    <span class="timeline-date">2023</span>
+                    <h4>KSUM Recognition & Fresqu</h4>
+                    <p>Recognized under the Kerala Startup Mission (KSUM). Launched the Fresqu ecosystem, connecting regional sellers with hyper-local audiences.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-step" data-step="3">
+                  <div class="timeline-marker">
+                    <span class="marker-dot"></span>
+                    <span class="marker-line"></span>
+                  </div>
+                  <div class="timeline-content">
+                    <span class="timeline-date">2024 - 2025</span>
+                    <h4>The Fintech Acceleration</h4>
+                    <p>Scaled multi-vendor settlement architectures, payment stabilization rails, and wealth management code elements.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-step" data-step="4">
+                  <div class="timeline-marker">
+                    <span class="marker-dot"></span>
+                  </div>
+                  <div class="timeline-content">
+                    <span class="timeline-date">2026 & Beyond</span>
+                    <h4>Enterprise Scaling</h4>
+                    <p>Expanding from the robust Kerala footprint to deploy custom AI architectures and tech consulting across Pan-India.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Section Divider -->
+    <div class="luxury-divider">
+      <div class="divider-line"></div>
+      <div class="divider-diamond"></div>
+      <div class="divider-line"></div>
+    </div>
+
+
+    <!-- Core Operational Pillars Section -->
+    <section id="pillars" class="pillars-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-subtitle">CORE CAPABILITIES</h2>
+          <h1 class="section-title">Deep Tech Meets <span class="gold-gradient-text">Financial Infrastructure</span></h1>
+          <p class="section-desc">Mangozteen operates at the convergence of machine intelligence and secure transactional settlement pipelines.</p>
+        </div>
+
+        <div class="pillars-grid">
+          <!-- Pillar 1: AI & ML -->
+          <div class="pillar-card glow-spotlight">
+            <div class="pillar-icon-wrapper">
+              <i data-lucide="cpu" class="pillar-icon"></i>
+            </div>
+            <h3 class="pillar-card-title">Artificial Intelligence & Machine Learning</h3>
+            <p class="pillar-card-text">
+              The neural backbone of our company centers on building sophisticated data models tailored for complex logistics and hyper-local commercial nodes.
+            </p>
+            <ul class="pillar-features">
+              <li>
+                <i data-lucide="check" class="check-icon"></i>
+                <div>
+                  <strong>Predictive Demand Mapping:</strong> 
+                  ML models trace dynamic local buying behavior, enabling sellers to align inventory ahead of demand peaks.
+                </div>
+              </li>
+              <li>
+                <i data-lucide="check" class="check-icon"></i>
+                <div>
+                  <strong>Frictionless Route Tuning:</strong> 
+                  Real-time routing algorithms compute optimal distribution paths to reduce delivery windows and eliminate transit damage.
+                </div>
+              </li>
+              <li>
+                <i data-lucide="check" class="check-icon"></i>
+                <div>
+                  <strong>Logistical Risk Assessment:</strong> 
+                  Probabilistic models analyze delivery vectors to isolate volatile links before failures happen.
+                </div>
+              </li>
+            </ul>
+            <div class="pillar-interactive-trigger" id="ai-pillar-expand">
+              <span>View Data Metrics</span>
+              <i data-lucide="chevron-down" class="trigger-chevron"></i>
+            </div>
+            <!-- Expanded Details (Vanilla JS Controlled) -->
+            <div class="pillar-details-drawer" id="ai-details-drawer">
+              <div class="drawer-inner">
+                <div class="metric-data-row">
+                  <span>Routing Optimization Defect Rate</span>
+                  <strong class="gold-text">&lt; 1.6%</strong>
+                </div>
+                <div class="metric-data-row">
+                  <span>Data Ingestion Latency</span>
+                  <strong class="gold-text">45ms</strong>
+                </div>
+                <div class="metric-data-row">
+                  <span>Predictive Inventory Accuracy</span>
+                  <strong class="gold-text">94.8%</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pillar 2: Fintech Layer -->
+          <div class="pillar-card glow-spotlight">
+            <div class="pillar-icon-wrapper">
+              <i data-lucide="wallet" class="pillar-icon"></i>
+            </div>
+            <h3 class="pillar-card-title">The Fintech Layer</h3>
+            <p class="pillar-card-text">
+              We engineer payment architectures, settlement pathways, and wealth management modules to protect enterprise transactional margins.
+            </p>
+            <ul class="pillar-features">
+              <li>
+                <i data-lucide="check" class="check-icon"></i>
+                <div>
+                  <strong>B2C & B2B Settlement Engines:</strong> 
+                  Secure, automated backend integrations that clear multi-vendor split-payouts instantly.
+                </div>
+              </li>
+              <li>
+                <i data-lucide="check" class="check-icon"></i>
+                <div>
+                  <strong>Payment Stability Rails:</strong> 
+                  Decentralized settlement checks designed to minimize cart failures and ensure constant transactional integrity.
+                </div>
+              </li>
+              <li>
+                <i data-lucide="check" class="check-icon"></i>
+                <div>
+                  <strong>Wealth Optimization Modules:</strong> 
+                  Intelligent algorithmic wealth allocation and reserve management tailored for emerging Indian businesses.
+                </div>
+              </li>
+            </ul>
+            <div class="pillar-interactive-trigger" id="fintech-pillar-expand">
+              <span>View Transaction Metrics</span>
+              <i data-lucide="chevron-down" class="trigger-chevron"></i>
+            </div>
+            <!-- Expanded Details -->
+            <div class="pillar-details-drawer" id="fintech-details-drawer">
+              <div class="drawer-inner">
+                <div class="metric-data-row">
+                  <span>Settlement Success Rate</span>
+                  <strong class="gold-text">99.98%</strong>
+                </div>
+                <div class="metric-data-row">
+                  <span>Multi-Vendor Split Payouts</span>
+                  <strong class="gold-text">&lt; 1.2s</strong>
+                </div>
+                <div class="metric-data-row">
+                  <span>Ledger Integrity Verification</span>
+                  <strong class="gold-text">Automated / Instantly</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Fintech Ledger Flow Visualizer -->
+        <div class="ledger-visualizer-container glow-spotlight scroll-reveal">
+          <h3 class="ledger-title">
+            <i data-lucide="activity" class="ledger-title-icon"></i>
+            Real-Time Settlement & Ledger Visualizer
+          </h3>
+          <p class="ledger-subtitle">Toggle between different transactional modules to see how the Mangozteen Fintech Engine allocates assets securely.</p>
+          
+          <div class="ledger-toggle-row">
+            <button class="ledger-btn active" data-flow="b2b">B2B Settlement Pipeline</button>
+            <button class="ledger-btn" data-flow="split">B2C Split-Payout Engine</button>
+            <button class="ledger-btn" data-flow="decentral">Stability Assurance Rails</button>
+          </div>
+
+          <div class="ledger-display-area">
+            <div class="ledger-flow-grid">
+              
+              <!-- Source Node -->
+              <div class="ledger-node" id="node-source">
+                <div class="node-icon"><i data-lucide="store" class="gold-text"></i></div>
+                <div class="node-label">Merchant Core</div>
+                <div class="node-status active">INCOMING</div>
+              </div>
+
+              <!-- Animated Vector Connector -->
+              <div class="ledger-connector">
+                <svg width="100%" height="40" viewBox="0 0 200 40" preserveAspectRatio="none">
+                  <path d="M 0 20 L 200 20" stroke="rgba(212,175,55,0.2)" stroke-width="2" fill="none" />
+                  <path id="flow-pulse-1" d="M 0 20 L 200 20" stroke="url(#gold-grad)" stroke-width="3" fill="none" stroke-dasharray="10 100" stroke-dashoffset="0" />
+                </svg>
+              </div>
+
+              <!-- Settlement Node -->
+              <div class="ledger-node active" id="node-engine">
+                <div class="node-icon pulse-gold"><i data-lucide="shield-check" class="gold-text"></i></div>
+                <div class="node-label">Mangozteen Settlement</div>
+                <div class="node-value" id="ledger-dynamic-value">₹45,820 / sec</div>
+              </div>
+
+              <!-- Animated Vector Connector -->
+              <div class="ledger-connector">
+                <svg width="100%" height="40" viewBox="0 0 200 40" preserveAspectRatio="none">
+                  <path d="M 0 20 L 200 20" stroke="rgba(212,175,55,0.2)" stroke-width="2" fill="none" />
+                  <path id="flow-pulse-2" d="M 0 20 L 200 20" stroke="url(#gold-grad)" stroke-width="3" fill="none" stroke-dasharray="10 100" stroke-dashoffset="0" />
+                </svg>
+              </div>
+
+              <!-- Destination Node -->
+              <div class="ledger-node" id="node-dest">
+                <div class="node-icon"><i data-lucide="landmark" class="gold-text"></i></div>
+                <div class="node-label" id="ledger-dest-label">Partner Bank Rail</div>
+                <div class="node-status" id="ledger-dest-status">SETTLED</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Section Divider -->
+    <div class="luxury-divider">
+      <div class="divider-line"></div>
+      <div class="divider-diamond"></div>
+      <div class="divider-line"></div>
+    </div>
+
+
+    <!-- Product Ecosystem & Interactive Router Section -->
+    <section id="fresqu" class="fresqu-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-subtitle">PRIMARY ECOSYSTEM</h2>
+          <h1 class="section-title">The <span class="gold-gradient-text">Fresqu</span> Quick-Commerce Framework</h1>
+          <p class="section-desc">Developed under the KSUM framework, Fresqu connects regional merchants directly to consumer bases via algorithmic quick-delivery systems, neutralizing merchant product loss.</p>
+        </div>
+
+        <div class="fresqu-grid">
+          <!-- Text and features -->
+          <div class="fresqu-details">
+            <h3 class="fresqu-details-title">Securing Delivery Velocity & Margin Integrity</h3>
+            <p class="fresqu-text">
+              Quick-Commerce platforms lose millions due to transit damage, delivery failures, and high return ratios. Fresqu acts as a direct software framework connecting local sellers to target demographics with sub-minute latency.
+            </p>
+            <p class="fresqu-text">
+              By utilizing dynamic route calculations and real-time merchant demand indicators, Fresqu mitigates the exact bottlenecks that trigger stock degradation. It keeps food, consumer goods, and critical items fresh while keeping margins locked in for the seller.
+            </p>
+
+            <div class="fresqu-benefits">
+              <div class="benefit-item">
+                <div class="benefit-icon-box"><i data-lucide="navigation"></i></div>
+                <div>
+                  <h4>Algorithmic Routing</h4>
+                  <p>Minimizes path friction, routing riders around historical delay hotspots in Thrissur.</p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-icon-box"><i data-lucide="thumbs-up"></i></div>
+                <div>
+                  <h4>Zero Return Friction</h4>
+                  <p>Guarantees precise delivery coordinates, reducing returns caused by address confusion by 84%.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Pathfinding Simulator Widget -->
+          <div class="fresqu-simulator glow-spotlight">
+            <div class="sim-header">
+              <div class="sim-title">
+                <span class="sim-badge">LIVE SIMULATOR</span>
+                <h3>AI Route Pathfinding Engine</h3>
+              </div>
+              <div class="sim-controls">
+                <button class="btn-primary-gold btn-sm" id="btn-run-simulation">Compute Gold Route</button>
+                <button class="btn-secondary-outline btn-sm" id="btn-reset-simulation">Reset Nodes</button>
+              </div>
+            </div>
+            
+            <p class="sim-description">Click "Compute Gold Route" to see how the Fresqu algorithm calculates high-velocity delivery lines to bypass local congestion hot spots in Thrissur.</p>
+
+            <div class="sim-map-area" id="simulation-map">
+              <!-- Merchant Node -->
+              <div class="sim-node node-merchant" style="left: 10%; top: 75%;" title="Merchant Node (Poothole)">
+                <i data-lucide="store" class="node-icon-inner"></i>
+                <span class="node-text-tag">Poothole Shop</span>
+              </div>
+
+              <!-- Congestion Barrier A -->
+              <div class="sim-barrier barrier-active" style="left: 45%; top: 60%;" id="barrier-a">
+                <i data-lucide="octagon-alert" class="barrier-icon-inner"></i>
+                <span class="barrier-text-tag">Swaraj Round Traffic</span>
+              </div>
+
+              <!-- Congestion Barrier B -->
+              <div class="sim-barrier barrier-active" style="left: 30%; top: 30%;" id="barrier-b">
+                <i data-lucide="octagon-alert" class="barrier-icon-inner"></i>
+                <span class="barrier-text-tag">Railway Crossing Block</span>
+              </div>
+
+              <!-- Customer Node -->
+              <div class="sim-node node-customer" style="left: 85%; top: 20%;" title="Consumer Node (Ramavarmapuram)">
+                <i data-lucide="user" class="node-icon-inner"></i>
+                <span class="node-text-tag">Consumer</span>
+              </div>
+
+              <!-- Path Drawing SVG Overlay -->
+              <svg class="sim-path-svg" id="path-svg" width="100%" height="100%">
+                <!-- Normal Delayed Route -->
+                <path id="path-delayed" d="" stroke="rgba(255, 0, 0, 0.2)" stroke-width="2" stroke-dasharray="5 5" fill="none" />
+                <!-- AI Optimized Gold Route -->
+                <path id="path-optimized" d="" stroke="url(#gold-grad)" stroke-width="4" fill="none" stroke-linecap="round" />
+              </svg>
+
+              <!-- Running Info Panel -->
+              <div class="sim-info-panel" id="sim-status-panel">
+                <div class="info-label">Simulation State:</div>
+                <div class="info-value" id="sim-status-text">SYSTEM STANDBY</div>
+              </div>
+            </div>
+
+            <div class="sim-metrics-row">
+              <div class="sim-stat">
+                <span class="sim-stat-label">AI Transit Time</span>
+                <span class="sim-stat-val gold-text" id="sim-stat-time">-- mins</span>
+              </div>
+              <div class="sim-stat">
+                <span class="sim-stat-label">Return Probability</span>
+                <span class="sim-stat-val gold-text" id="sim-stat-risk">--%</span>
+              </div>
+              <div class="sim-stat">
+                <span class="sim-stat-label">Savings Margin</span>
+                <span class="sim-stat-val gold-text" id="sim-stat-savings">--%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Section Divider -->
+    <div class="luxury-divider">
+      <div class="divider-line"></div>
+      <div class="divider-diamond"></div>
+      <div class="divider-line"></div>
+    </div>
+
+
+    <!-- Vision & Expansion Section -->
+    <section id="roadmap" class="roadmap-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-subtitle">SCALING FOOTPRINT</h2>
+          <h1 class="section-title">Strategic Vision & <span class="gold-gradient-text">Expansion Roadmap</span></h1>
+          <p class="section-desc">Steering from our regional core, Mangozteen is expanding its technical pipeline to build enterprise machine intelligence pan-India.</p>
+        </div>
+
+        <div class="roadmap-grid">
+          <!-- Left side: Roadmap Stages -->
+          <div class="roadmap-stages">
+            
+            <div class="roadmap-card glow-spotlight">
+              <div class="roadmap-badge">PHASE 01</div>
+              <h3 class="roadmap-stage-title">Regional Rooting & Optimization</h3>
+              <p class="roadmap-stage-text">
+                Cementing our logistical models in Thrissur, completing integration pathways for local quick-commerce merchants, and securing initial KSUM accolades.
+              </p>
+              <div class="roadmap-completion">
+                <span class="comp-label">Completed & Implemented</span>
+                <div class="comp-bar"><div class="comp-fill" style="width: 100%;"></div></div>
+              </div>
+            </div>
+
+            <div class="roadmap-card glow-spotlight">
+              <div class="roadmap-badge gold-glow">PHASE 02</div>
+              <h3 class="roadmap-stage-title">State-Wide Settlement Scaling</h3>
+              <p class="roadmap-stage-text">
+                Expanding our B2B/B2C payment stability structures and settlement pipelines across major commercial hubs in Kerala (Kochi, Kozhikode, Trivandrum).
+              </p>
+              <div class="roadmap-completion">
+                <span class="comp-label">In Deployment</span>
+                <div class="comp-bar"><div class="comp-fill gold-gradient-bg" style="width: 75%;"></div></div>
+              </div>
+            </div>
+
+            <div class="roadmap-card glow-spotlight">
+              <div class="roadmap-badge">PHASE 03</div>
+              <h3 class="roadmap-stage-title">Pan-India Corporate Deployments</h3>
+              <p class="roadmap-stage-text">
+                Scaling enterprise software suites, predictive distribution analytics engines, and wealth stability tool modules directly to global enterprise merchants.
+              </p>
+              <div class="roadmap-completion">
+                <span class="comp-label">Strategic Targeting (2026-27)</span>
+                <div class="comp-bar"><div class="comp-fill" style="width: 15%;"></div></div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right side: Custom India / Tech Map SVG Visualizer -->
+          <div class="roadmap-map-panel glow-spotlight">
+            <h3 class="map-panel-title"><i data-lucide="map-pin" class="gold-text"></i> Dynamic Geo-Scaling</h3>
+            <p class="map-panel-desc">Hover over active hub coordinates to view strategic node status in real time.</p>
+            
+            <div class="map-svg-wrapper">
+              <svg class="map-svg" viewBox="0 0 400 450" width="100%" height="100%">
+                <defs>
+                  <radialGradient id="map-glow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.3"/>
+                    <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+                <!-- Decorative Grid representing high tech coordination -->
+                <path d="M 0 50 L 400 50 M 0 100 L 400 100 M 0 150 L 400 150 M 0 200 L 400 200 M 0 250 L 400 250 M 0 300 L 400 300 M 0 350 L 400 350 M 0 400 L 400 400" stroke="rgba(212, 175, 55, 0.04)" stroke-width="0.5" />
+                <path d="M 50 0 L 50 450 M 100 0 L 100 450 M 150 0 L 150 450 M 200 0 L 200 450 M 250 0 L 250 450 M 300 0 L 300 450 M 350 0 L 350 450" stroke="rgba(212, 175, 55, 0.04)" stroke-width="0.5" />
+                
+                <!-- Stylized Outline of South India / Kerala Tech nodes -->
+                <path d="M 120 40 L 160 80 L 140 130 L 165 180 L 145 220 L 175 280 L 130 330 L 140 380 L 160 410 L 155 430 Q 150 440, 140 435 L 125 410 L 115 375 L 118 340 L 100 300 L 112 250 L 108 200 L 125 150 L 115 100 Z" fill="none" stroke="rgba(212, 175, 55, 0.15)" stroke-width="1.5" stroke-dasharray="3 3" />
+                
+                <!-- Scaling Rings around HQ (Thrissur) -->
+                <circle cx="130" cy="330" r="45" fill="none" stroke="rgba(212,175,55,0.08)" stroke-width="1" class="scale-ring-1" />
+                <circle cx="130" cy="330" r="90" fill="none" stroke="rgba(212,175,55,0.04)" stroke-width="1" class="scale-ring-2" />
+                
+                <!-- Paths between HQ and other expansion nodes -->
+                <path d="M 130 330 Q 160 250, 175 280 Q 230 180, 240 120" stroke="rgba(212,175,55,0.2)" stroke-width="1" fill="none" stroke-dasharray="2 4" class="map-connection-line" />
+                <path d="M 130 330 Q 150 380, 160 410" stroke="rgba(212,175,55,0.2)" stroke-width="1" fill="none" stroke-dasharray="2 4" class="map-connection-line" />
+
+                <!-- Thrissur HQ Active Glow -->
+                <circle cx="130" cy="330" r="12" fill="url(#map-glow)" />
+                <circle cx="130" cy="330" r="5" fill="#D4AF37" filter="url(#glow)" class="hq-pulse-dot" />
+
+                <!-- Expansion Node 1: Kochi -->
+                <circle cx="140" cy="360" r="4" fill="rgba(212,175,55,0.6)" class="map-node-trigger" data-node="kochi" />
+                <!-- Expansion Node 2: Kozhikode -->
+                <circle cx="118" cy="290" r="4" fill="rgba(212,175,55,0.6)" class="map-node-trigger" data-node="kozhikode" />
+                <!-- Expansion Node 3: Bangalore Hub -->
+                <circle cx="200" cy="220" r="4" fill="rgba(212,175,55,0.6)" class="map-node-trigger" data-node="blr" />
+                <!-- Expansion Node 4: Mumbai Hub -->
+                <circle cx="110" cy="120" r="4" fill="rgba(212,175,55,0.6)" class="map-node-trigger" data-node="mumbai" />
+
+                <!-- Text Labels -->
+                <text x="145" y="334" fill="#D4AF37" font-size="10" font-family="'Space Grotesk', sans-serif" font-weight="bold">THRISSUR (HQ)</text>
+                <text x="152" y="364" fill="#A3A39C" font-size="8" font-family="'Outfit', sans-serif">Kochi Core</text>
+                <text x="65" y="293" fill="#A3A39C" font-size="8" font-family="'Outfit', sans-serif">Kozhikode Node</text>
+                <text x="210" y="224" fill="#A3A39C" font-size="8" font-family="'Outfit', sans-serif">Bangalore pipeline</text>
+                <text x="120" y="124" fill="#A3A39C" font-size="8" font-family="'Outfit', sans-serif">Mumbai Desk</text>
+              </svg>
+
+              <!-- Hover Status Card inside Map Panel -->
+              <div class="map-status-overlay" id="map-node-info">
+                <h4 id="map-info-title">THRISSUR HEADQUARTERS</h4>
+                <p id="map-info-desc">Poothole corporate node active. Core routing calculations, model compiling, and partnership settlement base.</p>
+                <span class="map-info-badge" id="map-info-status">OPERATIONAL FOUNDATION</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Section Divider -->
+    <div class="luxury-divider">
+      <div class="divider-line"></div>
+      <div class="divider-diamond"></div>
+      <div class="divider-line"></div>
+    </div>
+
+
+    <!-- Leadership & Team Section -->
+    <section id="leadership" class="leadership-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-subtitle">FOUNDING BOARD</h2>
+          <h1 class="section-title">Leadership & <span class="gold-gradient-text">Governance</span></h1>
+          <p class="section-desc">Governed by an executive team combining algorithmic capability with regional market execution strategies.</p>
+        </div>
+
+        <div class="leadership-grid">
+          <!-- Member 1: Rahul Raghunathan -->
+          <div class="leader-card glow-spotlight">
+            <div class="leader-avatar-container">
+              <div class="leader-avatar-placeholder">
+                <i data-lucide="user-check" class="leader-placeholder-icon"></i>
+              </div>
+              <div class="leader-avatar-border"></div>
+            </div>
+            <div class="leader-info">
+              <h3 class="leader-name">Rahul Raghunathan</h3>
+              <p class="leader-role">Founder & Chief Executive Officer</p>
+              <div class="leader-bio-line"></div>
+              <p class="leader-bio">
+                Rahul guides the strategic execution, regional KSUM alliance networking, and core structural operations of the Mangozteen enterprise. Under his supervision, the company expanded from a Thrissur concept to a recognized fintech and deep tech pioneer.
+              </p>
+              <div class="leader-socials">
+                <a href="#" aria-label="LinkedIn Profile"><i data-lucide="linkedin"></i></a>
+                <a href="#" aria-label="Contact Email"><i data-lucide="mail"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 2: Amal Kishore -->
+          <div class="leader-card glow-spotlight">
+            <div class="leader-avatar-container">
+              <div class="leader-avatar-placeholder">
+                <i data-lucide="terminal" class="leader-placeholder-icon"></i>
+              </div>
+              <div class="leader-avatar-border"></div>
+            </div>
+            <div class="leader-info">
+              <h3 class="leader-name">Amal Kishore</h3>
+              <p class="leader-role">Co-Founder & Chief Technology Officer</p>
+              <div class="leader-bio-line"></div>
+              <p class="leader-bio">
+                Amal leads the mathematical framework development, compiling predictive routing neural trees, structuring Fresqu quick-commerce routing code, and ensuring payment settlement systems run at micro-second latencies.
+              </p>
+              <div class="leader-socials">
+                <a href="#" aria-label="LinkedIn Profile"><i data-lucide="linkedin"></i></a>
+                <a href="#" aria-label="GitHub Profile"><i data-lucide="github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Section Divider -->
+    <div class="luxury-divider">
+      <div class="divider-line"></div>
+      <div class="divider-diamond"></div>
+      <div class="divider-line"></div>
+    </div>
+
+
+    <!-- Contact / Inquiry Section -->
+    <section id="contact" class="contact-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-subtitle">CONNECT CHANNELS</h2>
+          <h1 class="section-title">Initiate <span class="gold-gradient-text">Enterprise Inquiry</span></h1>
+          <p class="section-desc">Request direct technical consultations, algorithmic demos, or integrate payment settlement frameworks with our developers.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Detail Panel -->
+          <div class="contact-info-panel glow-spotlight">
+            <h3 class="panel-headline">Corporate Node Thrissur</h3>
+            <p class="panel-tagline">Speak directly with our leadership or request custom API pricing tiers.</p>
+            
+            <div class="contact-methods">
+              <div class="method-card">
+                <div class="method-icon-box"><i data-lucide="map-pin"></i></div>
+                <div>
+                  <h4>Corporate Headquarters</h4>
+                  <p>Poothole Road, Thrissur, Kerala<br>Pin Code: 680004</p>
+                </div>
+              </div>
+
+              <div class="method-card">
+                <div class="method-icon-box"><i data-lucide="mail"></i></div>
+                <div>
+                  <h4>Electronic Correspondence</h4>
+                  <p>inquiries@mangozteen.com<br>support@mangozteen.com</p>
+                </div>
+              </div>
+
+              <div class="method-card">
+                <div class="method-icon-box"><i data-lucide="shield-check"></i></div>
+                <div>
+                  <h4>Regulatory Registration</h4>
+                  <p>KSUM Recognition ID: KSUM-2023-FRESQU<br>Registrar Node: Kerala Corporate Partnership Registry</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dynamic Clock Widget showing local Kerala time -->
+            <div class="kerala-clock-card">
+              <div class="clock-icon"><i data-lucide="clock"></i></div>
+              <div class="clock-text">
+                <span class="clock-label">Local Node Time (IST):</span>
+                <span class="clock-time" id="ist-clock">18:30:00 (IST)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact / Inquiry Form -->
+          <div class="contact-form-wrapper glow-spotlight">
+            <h3 class="form-title">Strategic Inquiry Form</h3>
+            <p class="form-subtitle">Form protected by FormDock Encryption Tunnel.</p>
+            
+            <!-- Strategic Inquiry Form -->
+            <form id="inquiry-form" class="inquiry-form-element">
+              <!-- Grid Row for Name and Email -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="input-name">Correspondence Name *</label>
+                  <div class="input-wrapper">
+                    <i data-lucide="user" class="input-icon"></i>
+                    <input type="text" id="input-name" name="name" placeholder="e.g. Rahul Raghunathan" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="input-email">Electronic Mail Address *</label>
+                  <div class="input-wrapper">
+                    <i data-lucide="mail" class="input-icon"></i>
+                    <input type="email" id="input-email" name="email" placeholder="e.g. CEO@corporation.com" required>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Strategic Focus Selection -->
+              <div class="form-group">
+                <label for="select-interest">Strategic Focus Interest</label>
+                <div class="input-wrapper">
+                  <i data-lucide="sliders" class="input-icon"></i>
+                  <select id="select-interest" name="interest">
+                    <option value="ai-ml">AI & Predictive Demand Algorithms</option>
+                    <option value="fintech">Fintech & Settlement Infrastructure</option>
+                    <option value="fresqu">Fresqu Quick-Commerce Implementation</option>
+                    <option value="consulting">Enterprise Technical Consulting</option>
+                    <option value="partnership">Strategic Corporate Partnership</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Message Textarea -->
+              <div class="form-group">
+                <label for="input-message">Detailed Requirements / Inquiry Outline *</label>
+                <div class="input-wrapper">
+                  <i data-lucide="message-square" class="input-icon textarea-icon"></i>
+                  <textarea id="input-message" name="message" rows="4" placeholder="Outline your computational logistics challenges or pipeline targets..." required></textarea>
+                </div>
+              </div>
+
+              <!-- Form Submission Status Alert -->
+              <div id="form-result" class="form-result-box hidden"></div>
+
+              <!-- Submit Button -->
+              <button type="submit" id="form-submit-btn" class="btn-primary-gold btn-full-width">
+                <span>Submit Strategic Inquiry</span>
+                <i data-lucide="send" class="btn-icon"></i>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Luxury Footer -->
+  <footer class="footer">
+    <div class="section-container footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <svg class="logo-svg" viewBox="0 0 100 100" width="36" height="36">
+            <circle cx="50" cy="50" r="40" stroke="url(#gold-grad)" stroke-width="1" fill="none" opacity="0.3" stroke-dasharray="2 2" />
+            <path d="M 50 30 C 58 30, 65 37, 65 45 C 65 53, 58 60, 50 60 C 42 60, 35 53, 35 45 C 35 37, 42 30, 50 30 Z" fill="none" stroke="url(#gold-grad)" stroke-width="1.5" />
+            <circle cx="50" cy="45" r="5" fill="url(#gold-grad)" />
+          </svg>
+          <span class="logo-text">Mangozteen</span>
+        </div>
+        <p class="footer-slogan">Synthesizing Machine intelligence & secure transaction settlements.</p>
+      </div>
+
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#hero">Home Node</a></li>
+            <li><a href="#origin">Origins</a></li>
+            <li><a href="#pillars">Operational Pillars</a></li>
+            <li><a href="#fresqu">Fresqu Core</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Enterprise</h4>
+          <ul>
+            <li><a href="#roadmap">Scale Vision</a></li>
+            <li><a href="#leadership">Team Board</a></li>
+            <li><a href="#contact">Inquiries</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Regional HQ Code</h4>
+          <p class="footer-meta-detail">Poothole, Thrissur, Kerala<br>India — Pin: 680004</p>
+          <p class="footer-meta-detail">Node Coord: 10.5186° N, 76.2023° E</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">&copy; 2026 Mangozteen. Engineered with luxury precision. Under KSUM framework recognition. Powered by <a href="https://formdock.in" target="_blank" rel="noopener noreferrer" class="formdock-footer-link">FormDock</a></p>
+        <div class="footer-security-stamp">
+          <i data-lucide="shield-check" class="security-icon"></i>
+          <span>Secure AES-256 Ledger Channels</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="main.js"></script>
+</body>
+</html>

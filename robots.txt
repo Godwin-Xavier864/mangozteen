@@ -1,0 +1,8 @@
+# robots.txt — Mangozteen
+# https://www.mangozteen.com
+
+User-agent: *
+Allow: /
+
+# Point crawlers to the sitemap
+Sitemap: https://www.mangozteen.com/sitemap.xml
